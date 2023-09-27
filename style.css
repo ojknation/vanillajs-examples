@@ -3,3 +3,11 @@
   height: 100px;
   background-color: blue;
 }
+.add{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 9px;
+  margin-top: 1rem;
+  position: fixed;
+}
