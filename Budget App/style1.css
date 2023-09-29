@@ -1,0 +1,154 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "poppins" sans-serif;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.title{
+  background-color: silver;
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 1rem;
+}
+.container{
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgba(16, 97, 134, 0.685);
+}
+h1{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 20px;
+}
+h3{
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+  color: azure;
+}
+h4{
+  color: azure;
+  font-size: 15px;
+  
+}
+
+form label{
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+form input{
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 10px;
+}
+
+.btn{
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: steelblue;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
+  border-radius: 3rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.btn:hover{
+  color: steelblue;
+  background-color: white;
+}
+
+.delete-btn{
+  background-color: rgb(139, 192, 235);
+  width: 20px;
+  height: 20px;
+  float: right;
+  border: none;
+  border-radius: 10px;
+}
+
+.income-expense{
+  background-color: skyblue;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 1rem;
+  box-shadow: 0 5px 6px rgba(58, 73, 80, 0.685);
+  margin-bottom: 1rem;
+  
+}
+.income-expense > div{
+  flex: 1;
+  text-align: center;
+}
+.income,
+.expense,
+#balance{
+  font-size: 15px;
+  margin: 5px 0;
+  font-weight: bolder;
+}
+
+.bg-light{
+  background-color: steelblue;
+  border-radius: 0.5rem;
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
+  display: inline;
+}
+ul li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+#error_msg{
+  color: red;
+  background-color: rgb(224, 189, 183);
+  font-weight: bolder;
+  padding: 0 10px;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.list{
+  color: azure;
+}
+
+.minus,
+.plus {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.minus:hover,
+.plus:hover {
+  background-color: rgba(82, 160, 223, 0.5);
+  cursor: pointer;
+}
+
+
