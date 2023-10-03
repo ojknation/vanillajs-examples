@@ -23,10 +23,18 @@
         <label for="text">Description</label>
         <input type="text" id="text" placeholder="Enter Text...">
       </div>
-
       <div class="form-control">
-        <label for="amount">Amount(+/-)</label>
+        <label for="amount">Amount:</label>
         <input type="number" id="amount" placeholder="Enter Value...">
+      </div>
+      <div>
+        <label for="income-type">Transaction Type:</label>
+        <select name="type" id="option" class="select-bar">
+          <optgroup label="Icome/Expense">
+            <option value="income">Income</option>
+           <option value="expense">Expense</option>
+          </optgroup>
+        </select>
       </div>
       <button class="btn">Add Transaction</button>
     </form>
