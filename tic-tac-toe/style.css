@@ -27,8 +27,8 @@ h1{
 }
 
 #gameboard{
-  width: 303px;
-  height: 303px;
+  width: 305px;
+  height: 305px;
   background-color: black;
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +38,7 @@ h1{
 }
 
 #info{
-  width: 301.5px;
+  width: 303px;
   text-align: center;
   padding: 0.2em;
   border-radius: 1em;
@@ -72,8 +72,8 @@ h1{
 }
 
 .square{
-  width: 100.5px;
-  height: 100.5px;
+  width: 101px;
+  height: 101px;
   background-color: white;
   border: solid 2px steelblue;
   display: flex;

@@ -25,13 +25,14 @@ function addGo(e) {
   go = go === "circle" ? "cross" : "circle" 
   infoDisplay.textContent = `It is now ${go}'s turn. `
   e.target.removeEventListener("click", addGo)
-  checkScore()
- 
+  winChecker("circle");
+  winChecker("cross");
 }
 
-function checkScore() {
+
+const winChecker = (symbol) => {
   const allSquares = document.querySelectorAll(".square")
-  console.log(allSquares)
+  console.log(allSquares) 
   const winningCombos = [
     [0,1,2], [3,4,5], [6,7,8],
     [0,3,6], [1,4,7], [2,5,8],
@@ -39,28 +40,15 @@ function checkScore() {
   ]
 
   winningCombos.forEach(winningCombo => {
-    const circleWins = winningCombo.every(cell =>
-       allSquares[cell].firstChild?.classList.contains("circle"))
-    
-    if (circleWins) {
-      infoDisplay.textContent = `Circle Wins!`
+    const symbolWins = winningCombo.every(cell =>
+      allSquares[cell].firstChild?.classList.contains(symbol));
+  
+    if (symbolWins) {
+      infoDisplay.textContent = `${symbol} Wins!`
       allSquares.forEach(square => square.replaceWith(square.cloneNode(true)))
       return
     }
-  })
-
-  winningCombos.forEach(winningCombo => {
-    const crossWins = winningCombo.every(cell =>
-       allSquares[cell].firstChild?.classList.contains("cross"))
-    
-    if (crossWins) {
-      infoDisplay.textContent = `Cross Wins!`
-      allSquares.forEach(square => square.replaceWith(square.cloneNode(true)))
-      return
-    }
-  })
-
-
+ })
 }
 
 const button = document.getElementById("btn")
